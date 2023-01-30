@@ -39,7 +39,7 @@ export function Navigation(props) {
     <nav {...props}>
       <ul role="list">
         <TopLevelNavItem
-          href="https://github.com/educlopez/cooking-ai-cohere"
+          href="https://github.com/educlopez/chefhere-ai-cohere"
           target="_blank"
           rel="noopener noreferrer"
         >

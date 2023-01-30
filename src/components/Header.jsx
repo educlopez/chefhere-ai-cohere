@@ -70,7 +70,7 @@ export const Header = forwardRef(function Header({ className }, ref) {
         <nav className="hidden md:block">
           <ul role="list" className="flex items-center gap-8">
             <TopLevelNavItem
-              href="https://github.com/educlopez/tic-tac-toe"
+              href="https://github.com/educlopez/chefhere-ai-cohere"
               target="_blank"
               rel="noopener noreferrer"
             >
