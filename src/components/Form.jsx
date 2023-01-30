@@ -25,14 +25,22 @@ export default function Form({ setMessage, setLoading }) {
     <>
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col w-10/12 gap-4 px-4"
+        className="flex flex-col w-full gap-10 px-4 lg:w-10/12"
       >
         <div>
-          <label className="block text-sm font-medium text-gray-700 dark:text-white">
+          <label
+            htmlFor="ingredient"
+            className="flex gap-2 mb-2 text-sm font-medium text-gray-700 dark:text-white"
+          >
+            <span className="inline-flex items-center justify-center font-bold text-white bg-black rounded-full sm:mb-0 aspect-square h-7 dark:bg-white dark:text-black">
+              1
+            </span>
             Ingredients
           </label>
           <div className="mt-1">
             <textarea
+              id="ingredients"
+              name="ingredients"
               className="w-full py-2 pl-3 rounded-md bg-white text-base text-zinc-500 ring-1 ring-zinc-900/10 transition hover:ring-zinc-900/20 dark:bg-white/5 dark:text-zinc-400 dark:ring-inset dark:ring-white/10 dark:hover:ring-white/20 focus:[&:not(:focus-visible)]:outline-none"
               placeholder={'eggs, potatoes'}
               onChange={(e) => setIngredient(e.target.value)}
@@ -42,8 +50,11 @@ export default function Form({ setMessage, setLoading }) {
         <div className="">
           <label
             htmlFor="tool"
-            className="block text-sm font-medium text-gray-700 dark:text-white"
+            className="flex gap-2 mb-2 text-sm font-medium text-gray-700 dark:text-white"
           >
+            <span className="inline-flex items-center justify-center font-bold text-white bg-black rounded-full sm:mb-0 aspect-square h-7 dark:bg-white dark:text-black">
+              2
+            </span>
             What kitchen tools do you have?
           </label>
           <select
@@ -60,8 +71,12 @@ export default function Form({ setMessage, setLoading }) {
         <div className="">
           <label
             htmlFor="time"
-            className="block text-sm font-medium text-gray-700 dark:text-white"
+            className="flex gap-2 mb-2 text-sm font-medium text-gray-700 dark:text-white"
           >
+            {' '}
+            <span className="inline-flex items-center justify-center font-bold text-white bg-black rounded-full sm:mb-0 aspect-square h-7 dark:bg-white dark:text-black">
+              3
+            </span>
             Time
           </label>
           <select
@@ -78,8 +93,11 @@ export default function Form({ setMessage, setLoading }) {
         <div className="">
           <label
             htmlFor="level"
-            className="block text-sm font-medium text-gray-700 dark:text-white"
+            className="flex gap-2 mb-2 text-sm font-medium text-gray-700 dark:text-white"
           >
+            <span className="inline-flex items-center justify-center font-bold text-white bg-black rounded-full sm:mb-0 aspect-square h-7 dark:bg-white dark:text-black">
+              4
+            </span>
             Level
           </label>
           <select

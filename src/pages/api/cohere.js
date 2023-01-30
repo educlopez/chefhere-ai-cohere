@@ -8,7 +8,7 @@ export default async function handler(req, res) {
 
   const output = await cohere.generate({
     model: 'command-xlarge-20221108',
-    prompt: `Create a recipe for a dish that utilizes a ${tool}, requires ${time} cooking time, is suitable for a cook with ${level} experience and includes only the ingredient ${ingredient}. The recipe should include a descriptive name, detailed instructions, and the nutritional information including calories, fat, carbohydrates, and protein.`,
+    prompt: `Create a recipe for a dish that utilizes a ${tool}, requires ${time} cooking time, is suitable for a cook with ${level} experience and includes only the ingredient ${ingredient}. -- The recipe should include a descriptive name, detailed instructions, and the nutritional information including calories, fat, carbohydrates, and protein.`,
     max_tokens: 1000,
     temperature: 0.7,
     k: 0,

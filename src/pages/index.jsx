@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Head from 'next/head'
 
 import Form from '@/components/Form'
-import ResultBox from '@/components/ResultBox'
+import Recipe from '@/components/Recipe'
 
 export default function Home() {
   const [message, setMessage] = useState('')
@@ -32,12 +32,12 @@ export default function Home() {
             Nextjs, Co:here, TailwindCSS
           </p>
         </div>
-        <div className="grid items-center grid-cols-1 pt-10 mt-16 gap-y-2 sm:gap-y-6 md:mt-20 lg:grid-cols-12 lg:pt-0">
+        <div className="grid items-start grid-cols-1 pt-10 mt-16 gap-y-2 sm:gap-y-6 md:mt-20 lg:grid-cols-12 lg:pt-0">
           <div className="flex pb-4 -mx-4 overflow-x-auto sm:mx-0 sm:overflow-visible sm:pb-0 lg:col-span-7">
             <Form setMessage={setMessage} setLoading={setLoading} />
           </div>
           <div className="lg:col-span-5">
-            <ResultBox message={message} loading={loading} />
+            <Recipe message={message} loading={loading} />
           </div>
         </div>
       </div>
