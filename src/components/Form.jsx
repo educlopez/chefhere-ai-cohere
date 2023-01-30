@@ -88,9 +88,9 @@ export default function Form({ setMessage, setLoading }) {
             className="block pr-10 mt-1 w-full py-2 pl-3 rounded-md bg-white text-base text-zinc-500 ring-1 ring-zinc-900/10 transition hover:ring-zinc-900/20 dark:bg-white/5 dark:text-zinc-400 dark:ring-inset dark:ring-white/10 dark:hover:ring-white/20 focus:[&:not(:focus-visible)]:outline-none"
             onChange={(e) => setLevel(e.target.value)}
           >
-            <option value="master chef">Master chef</option>
-            <option value="middle">Mid</option>
-            <option value="noob">Noob</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
           </select>
         </div>
         <Button type="submit">Generate recipe</Button>
