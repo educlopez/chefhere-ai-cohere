@@ -13,6 +13,7 @@
     "@headlessui/react": "^1.7.7",
     "@heroicons/react": "^2.0.13",
     "@tailwindcss/typography": "^0.5.4",
+    "@vercel/analytics": "^0.1.8",
     "autoprefixer": "^10.4.12",
     "clsx": "^1.2.1",
     "cohere-ai": "^4.3.1",

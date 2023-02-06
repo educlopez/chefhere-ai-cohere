@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 
 import { Layout } from '@/components/Layout'
 import '@/styles/tailwind.css'
@@ -38,6 +39,7 @@ export default function App({ Component, pageProps, router }) {
           <main>
             <Layout {...pageProps}>
               <Component previousPathname={previousPathname} {...pageProps} />
+              <Analytics />
             </Layout>
           </main>
         </div>

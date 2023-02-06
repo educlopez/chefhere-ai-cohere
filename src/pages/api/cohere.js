@@ -23,5 +23,4 @@ export default async function handler(req, res) {
     status: output.statusCode,
     response: text,
   })
-  console.log(text)
 }
