@@ -7,7 +7,7 @@ import Form from '@/components/Form'
 import Recipe from '@/components/Recipe'
 
 export default function Home() {
-  const [message, setMessage] = useState('')
+  const [recipe, setRecipe] = useState('')
   const [loading, setLoading] = useState(false)
 
   return (
@@ -45,13 +45,13 @@ export default function Home() {
             variants={FADE_DOWN_ANIMATION_VARIANTS}
             className="flex pb-4 -mx-4 overflow-x-auto sm:mx-0 sm:overflow-visible sm:pb-0 lg:col-span-7"
           >
-            <Form setMessage={setMessage} setLoading={setLoading} />
+            <Form setRecipe={setRecipe} setLoading={setLoading} />
           </motion.div>
           <motion.div
             variants={FADE_DOWN_ANIMATION_VARIANTS}
             className="lg:col-span-5"
           >
-            <Recipe message={message} loading={loading} />
+            <Recipe recipe={recipe} loading={loading} />
           </motion.div>
         </div>
       </div>
