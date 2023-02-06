@@ -45,7 +45,7 @@ export default function Form({ setRecipe, setLoading }) {
               id="ingredients"
               name="ingredients"
               className="w-full py-2 pl-3 rounded-md bg-white text-base text-zinc-500 ring-1 ring-zinc-900/10 transition hover:ring-zinc-900/20 dark:bg-white/5 dark:text-zinc-400 dark:ring-inset dark:ring-white/10 dark:hover:ring-white/20 focus:[&:not(:focus-visible)]:outline-none"
-              placeholder={'eggs, potatoes'}
+              placeholder={'chocolate, milk, cookies...'}
               onChange={(v) => setIngredients(v.target.value)}
             ></textarea>
           </div>
@@ -63,6 +63,7 @@ export default function Form({ setRecipe, setLoading }) {
           <select
             id="tool"
             name="tool"
+            defaultValue="microwave"
             className="block pr-10 mt-1 w-full py-2 pl-3 rounded-md bg-white text-base text-zinc-500 ring-1 ring-zinc-900/10 transition hover:ring-zinc-900/20 dark:bg-white/5 dark:text-zinc-400 dark:ring-inset dark:ring-white/10 dark:hover:ring-white/20 focus:[&:not(:focus-visible)]:outline-none"
             onChange={(v) => setTool(v.target.value)}
           >
@@ -76,7 +77,6 @@ export default function Form({ setRecipe, setLoading }) {
             htmlFor="time"
             className="flex gap-2 mb-2 text-sm font-medium text-gray-700 dark:text-white"
           >
-            {' '}
             <span className="inline-flex items-center justify-center font-bold text-white bg-black rounded-full sm:mb-0 aspect-square h-7 dark:bg-white dark:text-black">
               3
             </span>
@@ -85,12 +85,14 @@ export default function Form({ setRecipe, setLoading }) {
           <select
             id="time"
             name="time"
+            defaultValue="10 minutes"
             className="block pr-10 mt-1 w-full py-2 pl-3 rounded-md bg-white text-base text-zinc-500 ring-1 ring-zinc-900/10 transition hover:ring-zinc-900/20 dark:bg-white/5 dark:text-zinc-400 dark:ring-inset dark:ring-white/10 dark:hover:ring-white/20 focus:[&:not(:focus-visible)]:outline-none"
             onChange={(v) => setTime(v.target.value)}
           >
-            <option value="master chef">30 minutes</option>
-            <option value="middle">1 hour</option>
-            <option value="noob">2 hour</option>
+            <option value="10 minutes">10 minutes</option>
+            <option value="30 minutes">30 minutes</option>
+            <option value="1 hour">1 hour</option>
+            <option value="2 hours">2 hours</option>
           </select>
         </div>
         <div className="">
@@ -106,6 +108,7 @@ export default function Form({ setRecipe, setLoading }) {
           <select
             id="level"
             name="level"
+            defaultValue="beginner"
             className="block pr-10 mt-1 w-full py-2 pl-3 rounded-md bg-white text-base text-zinc-500 ring-1 ring-zinc-900/10 transition hover:ring-zinc-900/20 dark:bg-white/5 dark:text-zinc-400 dark:ring-inset dark:ring-white/10 dark:hover:ring-white/20 focus:[&:not(:focus-visible)]:outline-none"
             onChange={(v) => setLevel(v.target.value)}
           >
