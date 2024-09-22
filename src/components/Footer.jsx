@@ -31,7 +31,7 @@ function SocialLink({ href, icon: Icon, children, rel, target }) {
 
 function SmallPrint() {
   return (
-    <div className="flex flex-col items-center justify-between gap-5 pt-8 border-t border-zinc-900/5 dark:border-white/5 sm:flex-row">
+    <div className="flex flex-col gap-5 justify-between items-center pt-8 border-t border-zinc-900/5 dark:border-white/5 sm:flex-row">
       <p className="text-xs text-zinc-600 dark:text-zinc-400">
         Made with ♥️ {new Date().getFullYear()} by{' '}
         <a
@@ -44,7 +44,7 @@ function SmallPrint() {
       </p>
       <div className="flex gap-4">
         <SocialLink
-          href="https://twitter.com/educlopez93"
+          href="https://x.com/educalvolpz"
           target="_blank"
           rel="noopener noreferrer"
           icon={TwitterIcon}
@@ -66,7 +66,7 @@ function SmallPrint() {
 
 export function Footer() {
   return (
-    <footer className="max-w-2xl pb-16 mx-auto space-y-10 lg:max-w-5xl">
+    <footer className="pb-16 mx-auto space-y-10 max-w-2xl lg:max-w-5xl">
       <SmallPrint />
     </footer>
   )
