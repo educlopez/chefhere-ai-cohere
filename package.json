@@ -10,29 +10,102 @@
   },
   "browserslist": "defaults, not ie <= 11",
   "dependencies": {
-    "@headlessui/react": "^1.7.7",
-    "@tailwindcss/typography": "^0.5.4",
-    "@vercel/analytics": "^0.1.8",
-    "autoprefixer": "^10.4.12",
+    "@headlessui/react": "^1.7.19",
+    "@tailwindcss/typography": "^0.5.20",
+    "@vercel/analytics": "^0.1.11",
+    "autoprefixer": "^10.6.1",
     "clsx": "^1.2.1",
-    "cohere-ai": "^4.3.1",
+    "cohere-ai": "^4.6.0",
     "focus-visible": "^5.2.0",
-    "framer-motion": "^7.6.7",
-    "next": "13.0.2",
+    "framer-motion": "^7.10.3",
+    "next": "13.5.11",
+    "postcss": "^8.5.31",
     "postcss-focus-visible": "^6.0.4",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
     "react-wrap-balancer": "^0.3.0",
     "remark-gfm": "^3.0.1",
-    "swr": "^2.0.0",
-    "tailwindcss": "^3.2.1",
-    "zustand": "^4.3.2"
+    "swr": "^2.5.1",
+    "tailwindcss": "^3.4.19",
+    "zustand": "^4.5.7"
   },
   "devDependencies": {
-    "@ianvs/prettier-plugin-sort-imports": "^3.7.1",
-    "eslint": "8.26.0",
-    "eslint-config-next": "13.0.2",
-    "prettier": "^2.7.1",
-    "prettier-plugin-tailwindcss": "^0.1.11"
+    "@ianvs/prettier-plugin-sort-imports": "^3.7.2",
+    "eslint": "8.57.1",
+    "eslint-config-next": "13.5.11",
+    "prettier": "^2.8.8",
+    "prettier-plugin-tailwindcss": "^0.1.13"
+  },
+  "overrides": {
+    "@babel/runtime": "^7.26.10",
+    "@babel/runtime-corejs3": "^7.26.10",
+    "ajv@6": "^6.14.0",
+    "brace-expansion@1": "^1.1.21",
+    "brace-expansion@2": "^2.1.7",
+    "braces": "^3.0.3",
+    "browserslist": "^4.28.7",
+    "cross-spawn": "^7.0.5",
+    "flatted": "^3.4.2",
+    "js-yaml@3": "^3.14.2",
+    "js-yaml@4": "^4.3.0",
+    "minimatch@3": "^3.1.4",
+    "picomatch@2": "^2.3.2",
+    "anymatch": {
+      "picomatch": "^2.3.2"
+    },
+    "micromatch": {
+      "picomatch": "^2.3.2"
+    },
+    "readdirp": {
+      "picomatch": "^2.3.2"
+    },
+    "postcss": "$postcss",
+    "tailwindcss": {
+      "postcss-selector-parser": "^7.1.6"
+    },
+    "@tailwindcss/typography": {
+      "postcss-selector-parser": "^7.1.6"
+    },
+    "postcss-nested": {
+      "postcss-selector-parser": "^7.1.6"
+    },
+    "postcss-focus-visible": {
+      "postcss-selector-parser": "^7.1.6"
+    },
+    "semver@6": "^6.3.1",
+    "semver@7": "^7.5.2",
+    "source-map-js": "^1.2.2",
+    "word-wrap": "^1.2.4",
+    "yaml@1": "^1.10.3"
+  },
+  "pnpm": {
+    "overrides": {
+      "@babel/runtime": "^7.26.10",
+      "@babel/runtime-corejs3": "^7.26.10",
+      "ajv@6": "^6.14.0",
+      "brace-expansion@1": "^1.1.21",
+      "brace-expansion@2": "^2.1.7",
+      "braces": "^3.0.3",
+      "browserslist": "^4.28.7",
+      "cross-spawn": "^7.0.5",
+      "flatted": "^3.4.2",
+      "js-yaml@3": "^3.14.2",
+      "js-yaml@4": "^4.3.0",
+      "minimatch@3": "^3.1.4",
+      "picomatch@2": "^2.3.2",
+      "anymatch>picomatch": "^2.3.2",
+      "micromatch>picomatch": "^2.3.2",
+      "readdirp>picomatch": "^2.3.2",
+      "postcss": "$postcss",
+      "tailwindcss>postcss-selector-parser": "^7.1.6",
+      "@tailwindcss/typography>postcss-selector-parser": "^7.1.6",
+      "postcss-nested>postcss-selector-parser": "^7.1.6",
+      "postcss-focus-visible>postcss-selector-parser": "^7.1.6",
+      "semver@6": "^6.3.1",
+      "semver@7": "^7.5.2",
+      "source-map-js": "^1.2.2",
+      "word-wrap": "^1.2.4",
+      "yaml@1": "^1.10.3"
+    }
   }
 }
