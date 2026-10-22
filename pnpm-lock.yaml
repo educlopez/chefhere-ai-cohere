@@ -5,26 +5,32 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
-  '@babel/runtime': 7.29.10
-  '@babel/runtime-corejs3': 7.29.10
-  ajv@6: 6.15.0
-  brace-expansion@1: 1.1.21
-  brace-expansion@2: 2.1.7
-  braces: 3.0.3
-  browserslist: 4.29.4
-  cross-spawn: 7.0.6
-  flatted: 3.4.4
-  js-yaml@3: 3.15.2
-  js-yaml@4: 4.3.2
-  minimatch@3: 3.1.5
-  picomatch: 2.3.2
-  postcss: 8.5.31
-  postcss-selector-parser: 7.1.7
-  semver@6: 6.3.1
-  semver@7: 7.8.5
-  source-map-js: 1.2.2
-  word-wrap: 1.2.5
-  yaml@1: 1.10.3
+  '@babel/runtime': ^7.26.10
+  '@babel/runtime-corejs3': ^7.26.10
+  ajv@6: ^6.14.0
+  brace-expansion@1: ^1.1.21
+  brace-expansion@2: ^2.1.7
+  braces: ^3.0.3
+  browserslist: ^4.28.7
+  cross-spawn: ^7.0.5
+  flatted: ^3.4.2
+  js-yaml@3: ^3.14.2
+  js-yaml@4: ^4.3.0
+  minimatch@3: ^3.1.4
+  picomatch@2: ^2.3.2
+  anymatch>picomatch: ^2.3.2
+  micromatch>picomatch: ^2.3.2
+  readdirp>picomatch: ^2.3.2
+  postcss: ^8.5.31
+  tailwindcss>postcss-selector-parser: ^7.1.6
+  '@tailwindcss/typography>postcss-selector-parser': ^7.1.6
+  postcss-nested>postcss-selector-parser: ^7.1.6
+  postcss-focus-visible>postcss-selector-parser: ^7.1.6
+  semver@6: ^6.3.1
+  semver@7: ^7.5.2
+  source-map-js: ^1.2.2
+  word-wrap: ^1.2.4
+  yaml@1: ^1.10.3
 
 importers:
 
@@ -58,7 +64,7 @@ importers:
         specifier: 13.5.11
         version: 13.5.11(@babel/core@7.29.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       postcss:
-        specifier: 8.5.31
+        specifier: ^8.5.31
         version: 8.5.31
       postcss-focus-visible:
         specifier: ^6.0.4
@@ -70,8 +76,8 @@ importers:
         specifier: 18.3.1
         version: 18.3.1(react@18.3.1)
       react-wrap-balancer:
-        specifier: ^0.5.0
-        version: 0.5.0(react@18.3.1)
+        specifier: ^0.3.0
+        version: 0.3.0(react@18.3.1)
       remark-gfm:
         specifier: ^3.0.1
         version: 3.0.1
@@ -763,7 +769,7 @@ packages:
     engines: {node: ^10 || ^12 || >=14}
     hasBin: true
     peerDependencies:
-      postcss: 8.5.31
+      postcss: ^8.5.31
 
   available-typed-arrays@1.0.7:
     resolution: {integrity: sha512-wvUjBtSGN7+7SjNpq/9M2Tg350UZD3q62IFZLbRAR1bSMlCo1ZaeW+BJ+D090e4hIIZLBcTDWe4Mh4jvUDajzQ==}
@@ -1145,7 +1151,7 @@ packages:
     resolution: {integrity: sha512-tIbYtZbucOs0BRGqPJkshJUYdL+SDH7dVM8gjy+ERp3WAUjLEFJE+02kanyHtwjWOnwrKYBiwAmM0p4kLJAnXg==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
-      picomatch: 2.3.2
+      picomatch: ^3 || ^4
     peerDependenciesMeta:
       picomatch:
         optional: true
@@ -1821,6 +1827,10 @@ packages:
     resolution: {integrity: sha512-V7+vQEJ06Z+c5tSye8S+nHUfI51xoXIXjHQ99cQtKUkQqqO1kO/KCJUfZXuB47h/YBlDhah2H3hdUGXn8ie0oA==}
     engines: {node: '>=8.6'}
 
+  picomatch@4.0.7:
+    resolution: {integrity: sha512-qcJu88Q2IWqJsDD529JKMdwGm/dvInW4HvQnRwiH9JtihJvzGOscDtHE3x1pBKeUOTysQ8kVmLnJ2kJu7yhcGA==}
+    engines: {node: '>=12'}
+
   pirates@4.0.7:
     resolution: {integrity: sha512-TfySrs/5nm8fQJDcBDuUng3VOUKsd7S+zqvbOTiGXHfxX4wK31ard+hoNuvkicM/2YFzlpDgABOevKSsB4G/FA==}
     engines: {node: '>= 6'}
@@ -1833,26 +1843,26 @@ packages:
     resolution: {integrity: sha512-QcKuUU/dgNsstIK6HELFRT5Y3lbrMLEOwG+A4s5cA+fx3A3y/JTq3X9LaOj3OC3ALH0XqyrgQIgey/MIZ8Wczw==}
     engines: {node: ^12 || ^14 || >=16}
     peerDependencies:
-      postcss: 8.5.31
+      postcss: ^8.5.31
 
   postcss-import@15.1.0:
     resolution: {integrity: sha512-hpr+J05B2FVYUAXHeK1YyI267J/dDDhMU6B6civm8hSY1jYJnBXxzKDKDswzJmtLHryrjhnDjqqp/49t8FALew==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
-      postcss: 8.5.31
+      postcss: ^8.5.31
 
   postcss-js@4.1.0:
     resolution: {integrity: sha512-oIAOTqgIo7q2EOwbhb8UalYePMvYoIeRY2YKntdpFQXNosSu3vLrniGgmH9OKs/qAkfoj5oB3le/7mINW1LCfw==}
     engines: {node: ^12 || ^14 || >= 16}
     peerDependencies:
-      postcss: 8.5.31
+      postcss: ^8.5.31
 
   postcss-load-config@6.0.1:
     resolution: {integrity: sha512-oPtTM4oerL+UXmx+93ytZVN82RrlY/wPUV8IeDxFrzIjXOLF1pN+EmKPLbubvKHT2HC20xXsCAH2Z+CKV6Oz/g==}
     engines: {node: '>= 18'}
     peerDependencies:
       jiti: '>=1.21.0'
-      postcss: 8.5.31
+      postcss: ^8.5.31
       tsx: ^4.8.1
       yaml: ^2.4.2
     peerDependenciesMeta:
@@ -1869,7 +1879,7 @@ packages:
     resolution: {integrity: sha512-HQbt28KulC5AJzG+cZtj9kvKB93CFCdLvog1WFLf1D+xmMvPGlBstkpTEZfK5+AN9hfJocyBFCNiqyS48bpgzQ==}
     engines: {node: '>=12.0'}
     peerDependencies:
-      postcss: 8.5.31
+      postcss: ^8.5.31
 
   postcss-selector-parser@7.1.7:
     resolution: {integrity: sha512-wWBro/7hJ40ye6TPiXkUQoXKCw23xSsjriUvqd7Uls9Sso3oLiON1flc18cCdnjgCRXw4fBVqUJJeOdDTh3P3g==}
@@ -1915,10 +1925,10 @@ packages:
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
 
-  react-wrap-balancer@0.5.0:
-    resolution: {integrity: sha512-5vwe5QDczQ9zwAtv3iEVj8hdMbNwQtM/QlSNLJfDUzRE9noPtxevb+Kon916Mu2RUorCrAtashQ1F9BVBjdeZg==}
+  react-wrap-balancer@0.3.0:
+    resolution: {integrity: sha512-UlnQvCvSRW0jh8uILic2LJs4tV0KjOO+P70ookE5qRpfZvsKmY8KLcV8s7TBPB6cuVYkoH7+fbqankFrFata8w==}
     peerDependencies:
-      react: '>=16.8.0 || ^17.0.0 || ^18'
+      react: ^18.0.0
 
   react@18.3.1:
     resolution: {integrity: sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==}
@@ -2219,7 +2229,7 @@ packages:
     resolution: {integrity: sha512-t8wonIOdQyOjtPd2VktlBu6QjTVTks6v8bSi7kd0r2Vll8TK1JYDZtRRdbmCHOAMphkZgrzK+L+vXK4pyZ8t4A==}
     hasBin: true
     peerDependencies:
-      browserslist: 4.29.4
+      browserslist: ^4.28.7
 
   uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
@@ -3441,9 +3451,9 @@ snapshots:
     dependencies:
       reusify: 1.1.0
 
-  fdir@6.5.0(picomatch@2.3.2):
+  fdir@6.5.0(picomatch@4.0.7):
     optionalDependencies:
-      picomatch: 2.3.2
+      picomatch: 4.0.7
 
   file-entry-cache@6.0.1:
     dependencies:
@@ -4288,6 +4298,8 @@ snapshots:
 
   picomatch@2.3.2: {}
 
+  picomatch@4.0.7: {}
+
   pirates@4.0.7: {}
 
   possible-typed-array-names@1.1.0: {}
@@ -4360,7 +4372,7 @@ snapshots:
 
   react-is@16.13.1: {}
 
-  react-wrap-balancer@0.5.0(react@18.3.1):
+  react-wrap-balancer@0.3.0(react@18.3.1):
     dependencies:
       react: 18.3.1
 
@@ -4661,8 +4673,8 @@ snapshots:
 
   tinyglobby@0.2.17:
     dependencies:
-      fdir: 6.5.0(picomatch@2.3.2)
-      picomatch: 2.3.2
+      fdir: 6.5.0(picomatch@4.0.7)
+      picomatch: 4.0.7
 
   to-regex-range@5.0.1:
     dependencies:
