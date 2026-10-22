@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
   },
   "browserslist": "defaults, not ie <= 11",
   "dependencies": {
@@ -18,11 +19,11 @@
     "cohere-ai": "^4.6.0",
     "focus-visible": "^5.2.0",
     "framer-motion": "^7.10.3",
-    "next": "13.5.11",
+    "next": "16.4.2",
     "postcss": "^8.5.31",
     "postcss-focus-visible": "^6.0.4",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
     "react-wrap-balancer": "^0.3.0",
     "remark-gfm": "^3.0.1",
     "swr": "^2.5.1",
@@ -31,10 +32,14 @@
   },
   "devDependencies": {
     "@ianvs/prettier-plugin-sort-imports": "^3.7.2",
-    "eslint": "8.57.1",
-    "eslint-config-next": "13.5.11",
+    "@types/node": "^22.20.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "eslint": "^10.13.0",
+    "eslint-config-next": "16.4.2",
     "prettier": "^2.8.8",
-    "prettier-plugin-tailwindcss": "^0.1.13"
+    "prettier-plugin-tailwindcss": "^0.1.13",
+    "typescript": "^5.9.3"
   },
   "overrides": {
     "@babel/runtime": "^7.26.10",
@@ -59,6 +64,8 @@
     "readdirp": {
       "picomatch": "^2.3.2"
     },
+    "react": "$react",
+    "react-dom": "$react-dom",
     "postcss": "$postcss",
     "tailwindcss": {
       "postcss-selector-parser": "^7.1.6"
@@ -96,6 +103,8 @@
       "anymatch>picomatch": "^2.3.2",
       "micromatch>picomatch": "^2.3.2",
       "readdirp>picomatch": "^2.3.2",
+      "react": "$react",
+      "react-dom": "$react-dom",
       "postcss": "$postcss",
       "tailwindcss>postcss-selector-parser": "^7.1.6",
       "@tailwindcss/typography>postcss-selector-parser": "^7.1.6",

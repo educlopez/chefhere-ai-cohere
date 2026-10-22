@@ -1,4 +1,3 @@
-import { useEffect, useRef } from 'react'
 import { Analytics } from '@vercel/analytics/react'
 
 import { Layout } from '@/components/Layout'
@@ -6,19 +5,7 @@ import '@/styles/tailwind.css'
 import 'focus-visible'
 import { motion } from 'framer-motion'
 
-function usePrevious(value) {
-  let ref = useRef()
-
-  useEffect(() => {
-    ref.current = value
-  }, [value])
-
-  return ref.current
-}
-
-export default function App({ Component, pageProps, router }) {
-  let previousPathname = usePrevious(router.pathname)
-
+export default function App({ Component, pageProps }) {
   return (
     <>
       <motion.div
@@ -38,7 +25,7 @@ export default function App({ Component, pageProps, router }) {
         <div className="relative">
           <main>
             <Layout {...pageProps}>
-              <Component previousPathname={previousPathname} {...pageProps} />
+              <Component {...pageProps} />
               <Analytics />
             </Layout>
           </main>
